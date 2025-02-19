@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 5px;
+}
+.images {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center; 
+    width: 200px; 
+    height: 250px; 
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 
+    border-radius: 5px;
+    border: solid 3px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    padding-bottom: 10px; 
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+.images p {
+    margin-top: 10px; 
+    font-size: 16px;
+    color: #333; 
+    font-weight: bold; 
+    padding: 0 5px; 
+    background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.images:hover {
+    transform: scale(1.1); 
+}
+
+.images:hover {
+    transform: scale(1.1);
+}
+img{
+    width:250px;
+    height:250px;
+}
+p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body::before{
+    background-image: url('21.jpg');
+    content:"";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    filter: blur(4px);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+
+}
